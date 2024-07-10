@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="live_session_tree" model="ir.ui.view">
+        <field name="name">Live.Session.View</field>
+        <field name="model">live.session.info</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="lesson_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="live_session_action_add" model="ir.actions.act_window">
+        <field name="name">Live.Session.Action</field>
+        <field name="res_model">live.session.info</field>
+        <field name="view_mode">tree,form</field>
+    </record> 
+
+</odoo>
