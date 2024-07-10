@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-  <record id="actions">    
-    <field name="name">field_value</field>
-    <field name="model">live.session.info</field>
-    <field name="type">ir.actions.act_window</field>
-  </record>
+  
 
-    <menuitem
-        id="iasd_menu"
-        name="Test"
-        action="actions"
-        sequence="10"/>
 </odoo>
