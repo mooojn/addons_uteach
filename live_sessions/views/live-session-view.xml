@@ -69,6 +69,6 @@
     <record id="live_session_action_add" model="ir.actions.act_window">
         <field name="name">Live.Session.Action</field>
         <field name="res_model">live.session.info</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">form</field>
     </record>
 </odoo>
