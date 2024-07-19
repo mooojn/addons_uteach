@@ -6,10 +6,10 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="lesson_name"/>
-                <field name="frequency_ids" string="Frequencies">
-                    <tree>
-                        <field name="day"/>
-                    </tree>
+                <field name="frequency_ids" string="Frequencies" widget="many2many_tags">
+                    <!-- <tree>
+                        <field name="day" widget="many2many_tags"/>
+                    </tree> -->
                 </field>
             </tree>
         </field>
@@ -87,4 +87,3 @@
         <field name="view_mode">form</field>
     </record>
 </odoo>
-

@@ -22,3 +22,19 @@ class Live_Session_Info(models.Model):
 
     frequency_ids = fields.One2many('live.session.frequency', 'session_id', string='FrequencyIds')
     teacher_id = fields.Many2one('res.users', string="TeacherID")   # for speaker field
+
+    def action_view_teacher(self):
+        self.ensure_one()
+        if self.teacher_id:
+            return {
+                'type': 'ir.actions.act_window',
+                'name': 'Teacher Info',
+                'view_mode': 'form',
+                'res_model': 'res.users',
+                'res_id': self.teacher_id.id,
+                'target': 'new',
+            }
+        else:
+            return {
+                'type': 'ir.actions.act_window_close'
+            }

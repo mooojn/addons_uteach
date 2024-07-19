@@ -10,14 +10,5 @@
         <record id="group_teacher" model="res.groups">
             <field name="name">Teacher</field>
         </record>
-        
-        <!-- Record Rule for Teachers -->
-        <record id="live_session_info_teacher_rule" model="ir.rule">
-            <field name="name">Live Session Info: Teacher Access</field>
-            <field name="model_id" ref="model_live_session_info"/>
-            <field name="groups" eval="[(4, ref('group_teacher'))]"/>
-            <field name="domain_force">[(1, '=', 1)]</field>
-        </record>
-
     </data>
 </odoo>

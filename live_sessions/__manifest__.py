@@ -22,10 +22,11 @@ Long description of module's purpose
 
     # always loaded
     'data': [
+        'groups/group.xml',
         'security/ir.model.access.csv',
         'views/live-session-view.xml',
+        'views/live-session-user-view.xml',
         'views/menu-items.xml',
-        'groups/group.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
