@@ -21,4 +21,4 @@ class Live_Session_Info(models.Model):
     visibility = fields.Selection([('public', 'public'), ('private', 'private')], string='Visibility')
 
     frequency_ids = fields.One2many('live.session.frequency', 'session_id', string='FrequencyIds')
-    # teacher_id    # for speaker field
+    teacher_id = fields.Many2one('res.users', string="TeacherID")   # for speaker field

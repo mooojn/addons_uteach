@@ -5,6 +5,7 @@
         id="live_session_root_menu"
         name="Live Session"
         action="test_action"
+        groups="group_teacher"
         />
 
     <menuitem
