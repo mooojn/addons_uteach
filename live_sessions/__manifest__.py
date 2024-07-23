@@ -18,7 +18,7 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'website'],
 
     # always loaded
     'data': [
@@ -27,6 +27,7 @@ Long description of module's purpose
         'views/live-session-view.xml',
         'views/live-session-user-view.xml',
         'views/menu-items.xml',
+        'views/live_web.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
