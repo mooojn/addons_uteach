@@ -14,7 +14,7 @@
                         <!-- main page -->
                         <div class="row s_nb_column_fixed o_grid_mode" data-row-count="11">
                             <div class="justify-content-center o_grid_item g-height-8 g-col-lg-5 col-lg-5" data-name="Box" style="z-index: 1; grid-area: 2 / 1 / 10 / 6;">
-                                <h1 class="display-3">Teach Online<strong>Easily.</strong></h1>
+                                <h1 class="display-3">Teach Online <strong>Easily.</strong></h1>
                                 <p class="lead">This is an engaging live session, a dynamic interactive component designed to bring extra attention to essential learning content or key information.</p>
                                 <div class="s_hr text-start pb32 pt4" data-snippet="s_hr" data-name="Separator">
                                     <hr class="w-100 mx-auto"/>
@@ -37,9 +37,13 @@
                                         <img t-att-src="'data:image/png;base64,' + session.img.decode('utf-8')" class="card-img-top" style="height: 250px; object-fit: cover;"/>
                                         <div class="card-body">
                                             <h3 class="card-title"><t t-esc="session.lesson_name"/></h3>
-                                            <p class="card-text"><t t-esc="session.lesson_description"/></p>
-                                            <button class="btn-primary btn">View Info</button>
+                                            <p class="card-text">
+                                                <t t-esc="session.truncate_text(session.lesson_description, 40)"/>
+                                            </p>
                                         </div>
+                                        <footer>
+                                            <button class="btn-primary btn" style="margin-left:100px; margin-bottom:30px;">View Info</button>
+                                        </footer>
                                     </div>
                                 </div>                
                             </t>
