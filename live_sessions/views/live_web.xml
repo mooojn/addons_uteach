@@ -19,7 +19,9 @@
                                 <div class="s_hr text-start pb32 pt4" data-snippet="s_hr" data-name="Separator">
                                     <hr class="w-100 mx-auto"/>
                                 </div>
-                                <p><a t-att-href="cta_btn_href" class="btn btn-lg btn-primary">Become a Coach <span class="fa fa-angle-right ms-2"/></a></p>
+                                <p class="lead">
+                                  <a t-att-href="cta_btn_href" class="btn btn-lg btn-primary coach-modal-trigger">Become a Coach <span class="fa fa-angle-right ms-2"/></a>
+                                </p>
                             </div>
                         <div class="o_grid_item o_grid_item_image g-col-lg-4 g-height-10 col-lg-4" style="z-index: 2; grid-area: 1 / 8 / 11 / 12;">
                             <img class="img img-fluid mx-auto shadow rounded" src="live_sessions/static/img/std.jpg" alt=""/>
