@@ -53,5 +53,11 @@ class Live_Session_Info(models.Model):
             'res_id': self.teacher_id.id,
             'target': 'new',
         }
+    def action_view_session_dates(self):
+        self.ensure_one()
+        action = self.env.ref('your_module.action_live_session_frequency').read()[0]
+        action['domain'] = [('session_id', '=', self.id)]
+        return action
+
 
     

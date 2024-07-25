@@ -23,12 +23,18 @@ Long description of module's purpose
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        # 'views/group.xml',
+        'views/group.xml',
         'views/live-session-view.xml',
         'views/menu-items.xml',
         'views/live_web.xml',
-        'views/modal_form_coach.xml'
+        'views/modal_form_coach.xml',
+        'views/live_session_info_template.xml',
     ],
+'assets': {
+'web.assets_frontend': [
+'live_sessions/static/src/js/modal.js'
+]
+},
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
