@@ -29,13 +29,13 @@ Long description of module's purpose
         'views/live_web.xml',
         'views/modal_form_coach.xml',
         'views/live_session_info_template.xml',
-        'views/live_session_coach_menu.xml',
+        'views/registration_success_template.xml',
     ],
-    'assets': {
-        'web.assets_frontend': [
-        'live_sessions/static/src/js/modal.js'  
-        ]   
-    },
+'assets': {
+'web.assets_frontend': [
+'live_sessions/static/src/js/modal.js'
+]
+},
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
