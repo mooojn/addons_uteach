@@ -11,8 +11,5 @@
             <field name="name">Teacher</field>
         </record>
 
-        <record id="group_live_session_admin" model="res.groups">
-            <field name="name">Admin</field>
-        </record>
     </data>
 </odoo>

@@ -25,12 +25,12 @@ Long description of module's purpose
         'security/ir.model.access.csv',
         'views/group.xml',
         'views/live-session-view.xml',
-        'views/menu-items.xml',
         'views/live_web.xml',
         'views/modal_form_coach.xml',
         'views/live_session_info_template.xml',
         'views/live_session_coach_menu.xml',
         'views/registration_success_template.xml',
+        'views/menu-items.xml',
     ],
     'assets': {
         'web.assets_frontend': [
