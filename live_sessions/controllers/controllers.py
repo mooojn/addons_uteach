@@ -31,4 +31,19 @@ class LiveSessionController(http.Controller):
 
         # Update the partner record
         partner.sudo().write(update_values)
-        return request.redirect("/live_sessions/success")
+        return request.redirect("/live_session/success")
+
+    @http.route('/live_session/register', type='http', auth='user', methods=['POST'], csrf=False)
+    def register_session(self, session_id, frequency_id):
+        user_id = request.env.user.id
+        frequency = request.env['live.session.frequency'].sudo().browse(int(frequency_id))
+        
+        if user_id not in frequency.student_ids.ids:
+            frequency.write({'student_ids': [(4, user_id)]})
+        
+        return request.redirect('/live_session/success')
+    
+    @http.route('/live_session/success', type='http', auth='public', website=True)
+    def register_success(self):
+        return request.render('live_sessions.registration_success_template')
+        

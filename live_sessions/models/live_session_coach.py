@@ -25,6 +25,8 @@ class Live_Session_Coach(models.Model):
                  except AccessError:
                      raise AccessError(_("You are not allowed to modify user groups. Contact your administrator."))
              partner.status = 'accepted'
+        
+        # redirect('../')
 
 
 

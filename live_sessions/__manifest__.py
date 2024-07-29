@@ -30,6 +30,7 @@ Long description of module's purpose
         'views/modal_form_coach.xml',
         'views/live_session_info_template.xml',
         'views/live_session_coach_menu.xml',
+        'views/registration_success_template.xml',
     ],
     'assets': {
         'web.assets_frontend': [
