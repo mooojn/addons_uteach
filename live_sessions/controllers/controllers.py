@@ -44,4 +44,4 @@ class LiveSessionController(http.Controller):
 
         # Update the partner record
         partner.sudo().write(update_values)
-        return request.make_response("Record updated successfully")
+        return request.redirect("/live_sessions/success")
